@@ -79,7 +79,7 @@ export const listSchools = (req, res) => {
       success: true,
       message: "Schools fetched successfully",
       count: sortedSchools.length,
-      schools: formattedSchools,
+      schools: sortedSchools,
     });
   });
 };
