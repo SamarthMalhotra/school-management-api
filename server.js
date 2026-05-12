@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 import connection from "./config/db.js";
 import schoolRoutes from "./routes/schoolRoutes.js";
-import notFound from "./middlewares/notFound.js";
+import notFound from "./middlewares/notfound.js";
 import errorHandler from "./middlewares/errorHandler.js";
 dotenv.config();
 const app = express();
