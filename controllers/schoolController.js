@@ -75,11 +75,6 @@ export const listSchools = (req, res) => {
         };
       })
       .sort((a, b) => a.distance - b.distance);
-    //Adding distance in KM format to the response
-    const formattedSchools = sortedSchools.map((school) => ({
-      ...school,
-      distance: `${school.distance} KM`,
-    }));
     res.json({
       success: true,
       message: "Schools fetched successfully",
